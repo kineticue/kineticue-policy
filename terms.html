@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Kineticue</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; }
+        /* 1. 기존 뼈대 및 라이트 모드 기본 색상 */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            padding: 20px; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            color: #333; 
+            background-color: #ffffff; 
+        }
         h1 { border-bottom: 2px solid #333; padding-bottom: 10px; }
         h2 { margin-top: 30px; color: #0056b3; }
+
+        /* 2. 🌙 핸드폰이 다크모드일 때 발동하는 마법의 코드! (색상만 변경) */
+        @media (prefers-color-scheme: dark) {
+            body { 
+                background-color: #121212; /* 까만 배경 */
+                color: #e0e0e0; /* 밝은 회색 글자 */
+            }
+            h1 { 
+                border-bottom: 2px solid #e0e0e0; /* 제목 밑줄도 밝은 회색으로 변경 */
+            }
+            h2 { 
+                color: #66b2ff; /* 다크모드에 잘 어울리는 밝은 파란색으로 변경 */
+            }
+        }
     </style>
 </head>
 <body>
@@ -30,4 +53,5 @@
     <p>For any questions regarding these Terms, please contact us at:<br>
     <strong>kineticue@gmail.com</strong></p>
 </body>
+
 </html>
